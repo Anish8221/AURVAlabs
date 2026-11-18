@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aurva Labs | Samples for Mirelo</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<style>
+:root{
+  --bg:#eef3f2; --ink:#12302f; --muted:#4d6665; --line:#c5d4d1; --panel:#f8fbfa; --accent:#e8a317; --on-accent:#12302f; --wave:#12302f;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#0f2322; --ink:#e6f0ee; --muted:#9db7b3; --line:#27433f; --panel:#142c2a; --accent:#f2b63d; --on-accent:#0f2322; --wave:#e6f0ee;}
+}
+:root[data-theme="dark"]{--bg:#0f2322; --ink:#e6f0ee; --muted:#9db7b3; --line:#27433f; --panel:#142c2a; --accent:#f2b63d; --on-accent:#0f2322; --wave:#e6f0ee;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+main{max-width:960px;margin:0 auto;padding:48px 20px 64px}
+.brand{font-weight:800;font-size:1.05rem;margin:0 0 56px}
+h1{font-size:clamp(2.3rem,7vw,4.2rem);line-height:1.05;font-weight:800;margin:0 0 18px;max-width:14ch;letter-spacing:-.02em}
+.lede{font-size:1.15rem;color:var(--muted);max-width:52ch;margin:0 0 44px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px}
+.feature{border-color:var(--accent)}
+.wave{width:100%;height:96px;display:block;margin-bottom:18px}
+.wave rect{fill:var(--wave);transform-box:fill-box;transform-origin:center;animation:rise .9s ease-out both}
+@keyframes rise{from{transform:scaleY(.05);opacity:.3}to{transform:scaleY(1);opacity:1}}
+@media (prefers-reduced-motion:reduce){.wave rect{animation:none}}
+h2{font-size:1.35rem;margin:0 0 4px;font-weight:600}
+.panel p{margin:0 0 18px;color:var(--muted)}
+.btn{display:inline-block;background:var(--accent);color:var(--on-accent);font-weight:600;text-decoration:none;padding:11px 22px;border-radius:999px}
+.btn:hover{filter:brightness(1.06)}
+a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.note{color:var(--muted);font-size:.95rem;margin:20px 0 0}
+.next{margin-top:56px;border-top:1px solid var(--line);padding-top:28px;max-width:60ch}
+.next h2{font-size:1.5rem;margin-bottom:8px}
+.next p{margin:0 0 12px}
+.next a{color:var(--ink);font-weight:600}
+</style>
+</head>
+<body>
+<main>
+  <p class="brand">Aurva Labs</p>
+  <h1>Sample videos made for Mirelo</h1>
+  <p class="lede">Made by Aurva Labs, an AI-powered UGC studio for tech and app brands. Start with the two Mirelo samples, then see two more samples of our work.</p>
+
+  <div class="grid">
+    <section class="panel feature">
+      <svg class="wave" data-seed="7" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <h2>Made for Mirelo</h2>
+      <p>Our sample for the Mirelo team.</p>
+      <a class="btn" href="https://docs.google.com/videos/d/1pve59a1FNTcgWw-ibyCZwsmu-JhSZzo_tZxDtu-3aXE/play" target="_blank" rel="noopener noreferrer">Watch Mirelo sample 1</a>
+    </section>
+    <section class="panel feature">
+      <svg class="wave" data-seed="9" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <h2>Made for Mirelo</h2>
+      <p>This is for the Mirelo team.</p>
+      <a class="btn" href="https://docs.google.com/videos/d/1k1kf22q3Du6xnhoU01S5t2CyzOKVe2SxqTI3YGXU3UQ/play?usp=sharing" target="_blank" rel="noopener noreferrer">Watch Mirelo sample 2</a>
+    </section>
+  </div>
+
+  <h2 style="margin:36px 0 16px">More samples</h2>
+  <div class="grid">
+    <section class="panel">
+      <svg class="wave" data-seed="1" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <h2>Sample 1</h2>
+      <p>Sample from Aurva Labs.</p>
+      <a class="btn" href="https://docs.google.com/videos/d/11Y1Pdjc6Vq2ZUY9ZigYBdNmFv8gy3eo6uHMqSF4cnK0/play?usp=sharing" target="_blank" rel="noopener noreferrer">Watch sample 1</a>
+    </section>
+    <section class="panel">
+      <svg class="wave" data-seed="4" viewBox="0 0 200 60" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <h2>Sample 2</h2>
+      <p>Sample from Aurva Labs.</p>
+      <a class="btn" href="https://docs.google.com/videos/d/1S7lfOoVduHp8rHMesSJc_NqLp2HhLNGx9AvvJ33FtEY/play?usp=sharing" target="_blank" rel="noopener noreferrer">Watch sample 2</a>
+    </section>
+  </div>
+  <p class="note">Each video opens in Google Vids in a new tab. Turn the sound on.</p>
+
+  <section class="next">
+    <h2>Want a different angle?</h2>
+    <p>Tell me the format, the clip or the hook you want to test, and I’ll make a new version.</p>
+    <p>Email <a href="mailto:aurvalabs749@gmail.com">aurvalabs749@gmail.com</a> or see more at <a href="https://aurva-labs-landing-page-2.vercel.app" target="_blank" rel="noopener noreferrer">aurva-labs-landing-page-2.vercel.app</a>.</p>
+  </section>
+</main>
+<script>
+document.querySelectorAll('.wave').forEach(function(svg){
+  var n=+svg.dataset.seed, out='';
+  for(var i=0;i<48;i++){
+    var v=Math.abs(Math.sin(i*.8+n)*.6+Math.sin(i*.31+n*2)*.4);
+    var h=6+v*50, x=i*4.17+.6;
+    out+='<rect x="'+x.toFixed(2)+'" y="'+((60-h)/2).toFixed(2)+'" width="2.4" height="'+h.toFixed(2)+'" rx="1.2" style="animation-delay:'+(i*12)+'ms"/>';
+  }
+  svg.innerHTML=out;
+});
+</script>
+</body>
+</html>
